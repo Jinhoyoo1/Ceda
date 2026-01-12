@@ -34,11 +34,12 @@ if (shit == 0)
 		yvel += 0.35;
 	}
 }
-if (place_meeting(x,y,obj_player))
+event_inherited()
+/*if (place_meeting(x,y,obj_player))
 {
 	if (obj_player.playerstate == 0)
 	{
-		obj_player.playerstate = 1;
+		obj_player.playerstate = powerid;
 	}
 	instance_destroy();
 }

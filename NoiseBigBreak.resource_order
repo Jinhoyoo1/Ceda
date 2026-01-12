@@ -133,6 +133,7 @@
     {"name":"obj_player2","order":6,"path":"objects/obj_player2/obj_player2.yy",},
     {"name":"obj_poofeffect","order":30,"path":"objects/obj_poofeffect/obj_poofeffect.yy",},
     {"name":"obj_popuptext","order":35,"path":"objects/obj_popuptext/obj_popuptext.yy",},
+    {"name":"obj_powerup_parent","order":52,"path":"objects/obj_powerup_parent/obj_powerup_parent.yy",},
     {"name":"obj_questionblock","order":15,"path":"objects/obj_questionblock/obj_questionblock.yy",},
     {"name":"obj_roomsizehitbox","order":5,"path":"objects/obj_roomsizehitbox/obj_roomsizehitbox.yy",},
     {"name":"obj_solid","order":4,"path":"objects/obj_solid/obj_solid.yy",},

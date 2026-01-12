@@ -172,6 +172,7 @@
     {"id":{"name":"obj_player2","path":"objects/obj_player2/obj_player2.yy",},},
     {"id":{"name":"obj_poofeffect","path":"objects/obj_poofeffect/obj_poofeffect.yy",},},
     {"id":{"name":"obj_popuptext","path":"objects/obj_popuptext/obj_popuptext.yy",},},
+    {"id":{"name":"obj_powerup_parent","path":"objects/obj_powerup_parent/obj_powerup_parent.yy",},},
     {"id":{"name":"obj_questionblock","path":"objects/obj_questionblock/obj_questionblock.yy",},},
     {"id":{"name":"obj_roomsizehitbox","path":"objects/obj_roomsizehitbox/obj_roomsizehitbox.yy",},},
     {"id":{"name":"obj_savehitbox","path":"objects/obj_savehitbox/obj_savehitbox.yy",},},
