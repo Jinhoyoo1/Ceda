@@ -1,0 +1,1 @@
+text = "Did you know that you can do a backwards summersault by jumping while turning? What? Of course I'm paid enough to verify this information! Who told you that I wasn't!?"

@@ -1,0 +1,1 @@
+text = "If you press Z while in the air, you will do a groundpound that can also act as a double-jump."

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_editor_encrypt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_editor_encrypt",
+  "parent":{
+    "name":"EditorCrypt",
+    "path":"folders/Extensions/EditorCrypt.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

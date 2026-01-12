@@ -1,0 +1,1 @@
+sine = random_range(-50,50)

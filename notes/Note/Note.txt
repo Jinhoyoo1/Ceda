@@ -1,0 +1,15 @@
+sprites:
+-eggopp idle 
+-eggopp death
+
+moonlight:
+-do the 4th (last) room
+-add eggblockz and eggblocks
+-add eggocycle
+
+junk beach:
+-refine basically the entire level to teach the mechanics better and be easier
+
+console:
+- fix the fuckin trim bug so we can add proper newline handling
+- add some actually useful commands
