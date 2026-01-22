@@ -1,4 +1,5 @@
 //  live_auto_call;
+//i coded the ceda stuff like shit, sorry
 if y > room_height + 500 && !instance_exists(obj_technicaldifficulty)
 {
 	if !(hp <= 0)
@@ -8,16 +9,20 @@ if y > room_height + 500 && !instance_exists(obj_technicaldifficulty)
 	 
 }
 
-if (playerstate == 0) //code ts in a more optimized manner, dont forget
+switch (playerstate)
 {
-	mask_index = spr_smallidle
-	spr_idle = spr_smallidle
-}else
-{
-	mask_index = spr_player_idle
-	spr_idle = spr_player_idle
+	case 0:
+		mask_index = spr_smallidle
+		spr_idle = spr_smallidle
+	break;
+	case 1:
+	case 2:
+	case 3:
+		mask_index = spr_player_idle
+		spr_idle = spr_player_idle
+	break;
 }
-
+	
 
 if room == room_editor && global.play != 1 || room == room_upload
 {
@@ -269,7 +274,13 @@ if ((state == states.normal) ||(state == states.jump)) && (dashtimer == 0) && (!
 	{
 		airdashing = 1
 		sprite_index = spr_crouchslip
-		dashtimer = 25
+		if (playerstate != 3)
+		{	
+			dashtimer = 25
+		}else
+		{
+			dashtimer = 35
+		}
 		
 		state = states.airdash
 		if (movespeed < 15)
