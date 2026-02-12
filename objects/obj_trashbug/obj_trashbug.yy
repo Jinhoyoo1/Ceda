@@ -10,10 +10,13 @@
   "name":"obj_trashbug",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"organiaze my shit",
+    "path":"folders/Objects/organiaze my shit.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemyparent",
+    "path":"objects/obj_enemyparent/obj_enemyparent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

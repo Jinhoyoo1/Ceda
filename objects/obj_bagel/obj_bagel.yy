@@ -9,8 +9,8 @@
   "name":"obj_bagel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"organiaze my shit",
+    "path":"folders/Objects/organiaze my shit.yy",
   },
   "parentObjectId":{
     "name":"obj_powerup_parent",
