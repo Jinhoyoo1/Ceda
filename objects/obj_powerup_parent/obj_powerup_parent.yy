@@ -8,8 +8,8 @@
   "name":"obj_powerup_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"organiaze my shit",
+    "path":"folders/Objects/organiaze my shit.yy",
   },
   "parentObjectId":null,
   "persistent":false,

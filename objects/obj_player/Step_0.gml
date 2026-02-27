@@ -8,7 +8,8 @@ if y > room_height + 500 && !instance_exists(obj_technicaldifficulty)
 	}
 	 
 }
-
+if (keyboard_check(ord("R")))
+	game_restart()
 switch (playerstate)
 {
 	case 0:
