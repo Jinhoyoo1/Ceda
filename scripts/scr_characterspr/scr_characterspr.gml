@@ -10,6 +10,9 @@ function scr_characterspr(){
 				spr_jump = spr_player_jump
 				spr_jumpmove = spr_playersmall_jumpmove
 			}
+			spr_bouncestart = spr_playersmall_bouncestart
+			spr_bouncestartmove = spr_playersmall_bouncestartmove
+			spr_bounceend = spr_playersmall_bounceend
 			spr_longjump = spr_player_longjump
 			spr_longjumpend = spr_player_longjumpend
 			spr_glidejumpstart = spr_player_glidejumpstart

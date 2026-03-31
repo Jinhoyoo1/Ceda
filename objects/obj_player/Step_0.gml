@@ -233,37 +233,44 @@ if (grounded)
 
 if (divedashing)
 {
-		dashtimer = 0
-		sprite_index = spr_bounce
-		vsp += 0.9
-				if (scr_solid(x,y+2)) || (scr_solid_slope(x,y+8))
-				{
-					//state = states.normal
-					if (key_down)
-					{
-						sprite_index = spr_noise_roll
-						state = states.slide
-						wheredslidecomefrom = 1
-						sprite_index = spr_noise_roll
-						movespeed = abs(vsp)/1.45 //make stackable option*/
-					}else
-					{
-						sprite_index = spr_bounce
-						candivedash = 1
-						divedashing = 0
-						if (key_jump2)
-						{
-							vsp = -16
-						}else
-						{
-							vsp = -8
-						}
-					}
-					if (move != 0)
-					{
-						xscale = move
-					}
-				}
+	dashtimer = 0
+	if (movespeed < 0.3)
+	{
+		sprite_index = spr_bouncestart
+	}else
+	{
+		sprite_index = spr_bouncestartmove
+	}
+	vsp += 0.9
+	if (scr_solid(x,y+2)) || (scr_solid_slope(x,y+8))
+	{
+		//state = states.normal
+		if (key_down)
+		{
+			sprite_index = spr_noise_roll
+			state = states.slide
+			wheredslidecomefrom = 1
+			sprite_index = spr_noise_roll
+			movespeed = abs(vsp)/1.45 //make stackable option*/
+		}else
+		{
+			candivedash = 1
+			divedashing = 0
+			if (key_jump2)
+			{
+				vsp = -16
+			}else
+			{
+				vsp = -8
+			}
+			state = states.jump
+			sprite_index = spr_bounceend
+		}
+		if (move != 0)
+		{
+			xscale = move
+		}
+	}
 }
 if (dashtimer > 0)
 {
@@ -900,8 +907,10 @@ switch state
 		if grounded //those who land
 		{
 			create_particle(x, y, spr_landcloud);
-			
-			state = states.normal;
+			if (sprite_index != spr_bouncestartmove) && (sprite_index != spr_bouncestart) && ((sprite_index != spr_bounceend)||vsp > 0)
+			{
+				state = states.normal;
+			}
 			image_index = 0;
 			//sprite_index = move != 0 ? spr_runland : spr_idle;
 		}
