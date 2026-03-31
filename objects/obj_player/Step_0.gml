@@ -23,7 +23,7 @@ switch (playerstate)
 		spr_idle = spr_player_idle
 	break;
 }
-	
+
 
 if room == room_editor && global.play != 1 || room == room_upload
 {
@@ -268,6 +268,19 @@ if (divedashing)
 if (dashtimer > 0)
 {
 	dashtimer --
+}
+if (movespeed > 0) //this is coded like fucking shit, recode it later
+{
+	if (sprite_index == spr_jump)
+	{
+		sprite_index = spr_jumpmove
+	}
+}else
+{
+	if (sprite_index == spr_jumpmove)
+	{
+		sprite_index = spr_jump
+	}
 }
 if ((state == states.normal) ||(state == states.jump)) && (dashtimer == 0) && (!airdashing)
 {
